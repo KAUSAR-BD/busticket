@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
+
+    <!-- Tailwind and daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-raleway">
+    <header class="container mx-auto">
+        <nav class="px-2 lg:px-0 mt-7 mb-7 flex flex-wrap justify-between items-center">
+            <!-- Logo -->
+            <div class="items-center mb-4 md:mb-0">
+                <span class="text-black text-2xl font-extrabold">Go Ticket</span>
+            </div>
+            <!-- Login Button -->
+            <div>
+                <button class="bus-btn flex gap-3 text-[#1DD100] font-bold py-2 px-4 mt-4 md:mt-0">
+                    Bus
+                    <img src="images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto">
+        <!-- Banner part -->
+        <div class="px-2 lg:px-0 mb-10">
+            <div class="relative bg-cover bg-center rounded-3xl lg:h-[750px] flex items-center justify-center"
+                style="background-image: url('images/banner.png');">
+                <div class=" rounded-3xl  absolute inset-0 bg-white opacity-5"></div>
+                <div class=" text-white z-10 text-center px-4">
+                    <h1 class=" mt-4 text-2xl lg:text-3xl md:text-5xl lg:text-6xl font-bold mb-4">End-to-End Travel with
+                        <br> <span style="color: #1DD100;">P Paribahan</span>
+                    </h1>
+                    <p class="  lg:w-[690px] space-y-4 text-base sm:text-lg md:text-xl">Yes, you can run unit tests and
+                        view the results directly within the app. The integrated testing features allow for a
+                        streamlined .</p>
+                    <button class=" lg:mt-8 bg-[#1DD100] text-black font-bold text-xl py-5 px-7 rounded-2xl mb-4">Buy
+                        Tickets</button>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="text-center text-4xl font-bold lg:mt-32 mb-14">
+                <h1>Best offers for you</h1>
+            </div>
+            <!-- Coupon part -->
+            <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-9 px-2 lg:px-0 mb-8">
+                <div class=" bg-[#FFBF0F] flex justify-between items-center h-60 rounded-3xl px-4 lg:px-14">
+                    <div class=" overflow-hidden">
+                        <div class="p-4">
+                            <h3 class="text-3xl font-extrabold mb-2">15% OFF</h3>
+                            <p class="text-sm text-gray-600 font-extrabold mb-4">on your next purchase</p>
+                            <p class="text-lg font-bold text-gray-800">use by January 2024</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class=" h-[242px]" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-3xl font-bold lg:font-extrabold">NEW15</h3>
+                        <p class="text-lg font-bold text-gray-800">Coupon Code</p>
+                    </div>
+
+                </div>
+
+                <div class=" bg-[#F78C9C] flex justify-between items-center h-60 rounded-3xl px-4 lg:px-14">
+                    <div class=" overflow-hidden">
+                        <div class="p-4">
+                            <h3 class="text-3xl font-extrabold mb-2">20% OFF</h3>
+                            <p class="text-sm text-gray-600 font-extrabold mb-4">on your next purchase</p>
+                            <p class="text-lg font-bold text-gray-800">use by January 2024</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class=" h-[242px]" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class=" text-xl lg:text-3xl font-extrabold">Couple 20</h3>
+                        <p class="text-lg font-bold text-gray-800">Coupon Code</p>
+                    </div>
+                </div>
+        </section>
+
+        <div class="mt-16 mb-14 flex justify-center items-center">
+            <button class="offer-btn rounded-xl font-bold text-xl  text-[#1DD100] font-bold py-5 px-8">
+                See All Offers
+            </button>
+        </div>
+
+    </main>
+    <footer class=" bg-[#030712] ">
+        <div class="container mx-auto py-32">
+            <div class="flex justify-between">
+                <div class="space-y-3">
+                    <h1 class="text-white font-extrabold text-3xl">Go Ticket</h1>
+                    <p class="text-white w-[300px]">P-Ticket is a digital platform to make your daily commuting better.</p>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="text-white">Download Now</h1>
+                    <div class="flex justify-between items-center rounded-xl px-1 bg-white">
+                        <img src="images/playstore.png" alt="">
+                        <div>
+                            <h4>Get it on</h4>
+                            <h1 class="font-bold text-xl">Google Play</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dashed mt-12 mb-8">
+            <div>
+                <div class="text-white flex justify-between">
+                    <p>@all rights reserved, P-Ticket services limited.2024</p>
+                    <div>
+                        <ul class="flex justify-between gap-4">
+                            <li>Terms & condition</li>
+                            <li>Return & refund policy</li>
+                            <li>Privacy policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

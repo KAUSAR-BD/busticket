@@ -1,0 +1,10 @@
+.bus-btn {
+  border-radius: 12px;
+  border: 1px solid rgba(29, 209, 0, 0.40);
+  background: rgba(29, 209, 0, 0.10);
+}
+
+.offer-btn {
+  border-radius: 12px;
+  border: 1px solid var(--primary-700, #1DD100);
+}
