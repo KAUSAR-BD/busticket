@@ -8,3 +8,8 @@
   border-radius: 12px;
   border: 1px solid var(--primary-700, #1DD100);
 }
+
+.greenline{
+  border-radius: 12px;
+  border: 1px solid var(--primary-700, #1DD100);s
+}

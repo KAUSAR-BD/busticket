@@ -113,67 +113,183 @@
         <section class="bg-white border-t-4 rounded-t-3xl border-green-500">
             <div class=" mt-5 mb-5 text-center  items-center space-y-4">
                 <h1 class="font-extrabold text-3xl">P.H Paribahan</h1>
-                <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing
+                <p>Yes, you can run unit tests and view the results directly within <br> the app. The integrated testing
                     features allow for a streamlined .</p>
             </div>
 
             <!-- ticket destination -->
-            <div class="bg-slate-100 flex justify-between items-center rounded-3xl">
-                <div class="space-y-4 p-11">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3">
-                            <img src="images/bus-logo.png" alt="">
-                            <div>
-                                <h1>Greenline Paribahan</h1>
-                                <p>Coach-009-WEB ! AC_Business</p>
+            <div>
+                <div class="mb-10 mt-10 greenline grid-cols-1 lg:flex justify-between items-center rounded-3xl ">
+                    <div class="space-y-4 p-11">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="images/bus-logo.png" alt="">
+                                <div>
+                                    <h1>Greenline Paribahan</h1>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/seat-green.png" alt="">
+                                <h1>40 Seat Lest</h1>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <img src="images/seat-green.png" alt="">
-                            <h1>40 Seat Lest</h1>
+                        <div class="lg:p-5 p-5  bg-slate-200 rounded-3xl space-y-5">
+                            <div class="flex justify-between">
+                                <h1>Route</h1>
+                                <p>Dhaka - Sylhet</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <h1>Departure Time</h1>
+                                <p>9:00 PM</p>
+                            </div>
+
+                            <div class="  lg:flex grid-cols-1 justify-between lg:gap-5">
+                                <button class="btn">
+                                    <h1>Boarding Point - Laxmipur</h1>
+                                </button>
+                                <button class="btn">
+                                    <h1>Dropping Point - Bogura</h1>
+                                </button>
+                                <button class="btn">
+                                    <h1>Est. Time - 11 Hour</h1>
+                                </button>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-slate-200 rounded-3xl p-4 space-y-5">
-                        <div class="flex justify-between">
-                            <h1>Route</h1>
-                            <p>Dhaka - Sylhet</p>
-                        </div>
-                        
-                        <div class="flex justify-between">
-                            <h1>Departure Time</h1>
-                            <p>9:00 PM</p>
-                        </div>
-                        
-                        <div class="flex justify-between items-center gap-5">
-                            <button class="btn">
-                                <h1>Boarding Point - Laxmipur</h1>
-                            </button>
-                            <button class="btn">
-                                <h1>Dropping Point - Bogura</h1>
-                            </button>
-                            <button class="btn">
-                                <h1>Est. Time - 11 Hour</h1>
-                            </button>
-                            
-                        </div>
+                    <div class="p-16">
+                        <img src="images/fare.png" alt="">
+                        <h1>550 Taka</h1>
+                        <p>Per Seat</p>
                     </div>
-                </div>
-                <!-- <div class="">
-                    <img src="images/cupon-devider.png" alt="">
-                </div> -->
-                <div class="p-16">
-                    <img src="images/fare.png" alt="">
-                    <h1>550 Taka</h1>
-                    <p>Per Seat</p>
                 </div>
             </div>
         </section>
 
+        <!-- main ticket -->
+        <div class="lg:flex lg:px-0 px-4 grid-cols-1 justify-between items-center gap-9 mb-10">
+            <div class="flex-1 space-y-5">
+                <div class="space-y-2">
+                    <h1>Select Your Seat</h1>
+                    <hr>
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <img src="images/seat-gray.png" alt="">
+                            <h1>Available</h1>
+                        </div>
+                        <div class="flex">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <h1>Selected</h1>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="flex justify-between gap-1 my-1 ">
+                    <button class="bg-[#1DD100] text-white px-4 py-4 rounded-md add-to-cart" data-name="A1 Economy"
+                        data-price="550">A1</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="A2 Economy"
+                        data-price="550">A2</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="A3 Economy"
+                        data-price="550">A3</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="A4 Economy"
+                        data-price="550">A4</button>
+                </div>
+                <div class="flex justify-between gap-1 my-1 ">
+                    <button class="bg-[#1DD100] text-white px-4 py-4 rounded-md add-to-cart" data-name="B1 Economy"
+                        data-price="550">B1</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="B2 Economy"
+                        data-price="550">B2</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="B3 Economy"
+                        data-price="550">B3</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="B4 Economy"
+                        data-price="550">B4</button>
+                </div>
+                <div class="flex justify-between gap-1 my-1 ">
+                    <button class="bg-[#1DD100] text-white px-4 py-4 rounded-md add-to-cart" data-name="C1 Economy"
+                        data-price="550">C1</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="C2 Economy"
+                        data-price="550">C2</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="C3 Economy"
+                        data-price="550">C3</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="C4 Economy"
+                        data-price="550">C4</button>
+                </div>
+                <div class="flex justify-between gap-1 my-1 ">
+                    <button class="bg-[#1DD100] text-white px-4 py-4 rounded-md add-to-cart" data-name="D1 Economy"
+                        data-price="550">D1</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="D2 Economy"
+                        data-price="550">D2</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="D3 Economy"
+                        data-price="550">D3</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="D4 Economy"
+                        data-price="550">D4</button>
+                </div>
+                <div class="flex justify-between gap-1 my-1 ">
+                    <button class="bg-[#1DD100] text-white px-4 py-4 rounded-md add-to-cart" data-name="E1 Economy"
+                        data-price="550">E1</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="E2 Economy"
+                        data-price="550">E2</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="E3 Economy"
+                        data-price="550">E3</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="E4 Economy"
+                        data-price="550">E4</button>
+                </div>
+                <div class="flex justify-between gap-1 my-1 ">
+                    <button class="bg-[#1DD100] text-white px-4 py-4 rounded-md add-to-cart" data-name="F1 Economy"
+                        data-price="550">F1</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="F2 Economy"
+                        data-price="550">F2</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="F3 Economy"
+                        data-price="550">F3</button>
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-md add-to-cart" data-name="F4 Economy"
+                        data-price="550">F4</button>
+                </div>
+            </div>
+            <div class="flex-1 lg:mt-0 mt-10">
+                <div id="cart" class="max-w-sm bg-white rounded-lg overflow-hidden md:col-span-4">
+                    <h2 class="text-xl font-semibold px-4 py-2 ">Your Selected Seat</h2>
+                    <ul id="cart-items" class=" "></ul>
+                    <div id="cart-total" class="px-4 py-2"></div>
+                </div>
+                <hr>
+                <div class="flex justify-center items-center mt-8">
+                    <input type="text" placeholder="Have any coupon?"
+                        class="border border-gray-300 rounded-l-md px-4 py-2">
+                    <button class="bg-[#1DD100] text-white px-4 py-2 rounded-r-md">Apply</button>
+                </div>
+                <div class=" bg-white rounded-lg  p-6">
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="number" class="block text-gray-700 font-bold mb-2">Phone Number:</label>
+                            <input type="number" id="number" name="number" placeholder="Your Number"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <button type="submit"
+                            class="bg-[#1DD100] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
 
     </main>
-    <footer class=" bg-[#030712] ">
+    <footer class=" bg-[#030712]">
         <div class="container mx-auto py-32">
-            <div class="flex justify-between">
+            <div class="lg:p-0 px-2 flex justify-between">
                 <div class="space-y-3">
                     <h1 class="text-white font-extrabold text-3xl">Go Ticket</h1>
                     <p class="text-white w-[300px]">P-Ticket is a digital platform to make your daily commuting better.
@@ -192,10 +308,10 @@
             </div>
             <hr class="border-dashed mt-12 mb-8">
             <div class="">
-                <div class="text-white flex justify-between">
+                <div class="text-white lg:px-0 px-2 flex justify-between">
                     <p>@all rights reserved, P-Ticket services limited.2024</p>
                     <div>
-                        <ul class="flex justify-between gap-4">
+                        <ul class="grid-cols-1  lg:flex justify-between gap-4">
                             <li>Terms & condition</li>
                             <li>Return & refund policy</li>
                             <li>Privacy policy</li>
@@ -205,7 +321,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="btn.js"></script>
 </body>
 
 </html>
