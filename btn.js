@@ -6,7 +6,7 @@ const addToCartButtons = document.querySelectorAll('.add-to-cart');
     addToCartButtons.forEach(button => {
       button.addEventListener('click', () => {
         if (cart.length >= 4) {
-          alert('You can only select up to 4 products at a time.');
+          alert('You can select seat up to 4 times.');
           return;
         }
 
@@ -14,7 +14,7 @@ const addToCartButtons = document.querySelectorAll('.add-to-cart');
         const price = parseFloat(button.getAttribute('data-price'));
 
         if (cart.some(item => item.name === name)) {
-          alert('You have already selected this product.');
+          alert('You have already selected this seat.');
           return;
         }
 
